@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manashvi Singh - Home Tutor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body class="bg-white text-gray-800 pt-28">
+
+  <!-- Header -->
+  <header id="main-header" class="My-header fixed top-0 w-full z-50 bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-400">
+    <div class="flex justify-between items-center py-3">
+      <div class="text-xl font-bold tracking-tight">Manashvi Singh</div>
+
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-white text-2xl">
+        ☰
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="index.html#home" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About</a>
+        <a href="index.html#subjects" class="hover:text-yellow-300">Subjects</a>
+        <a href="index.html#testimonials" class="hover:text-yellow-300">Testimonials</a>
+        <a href="index.html#contact" class="hover:text-yellow-300">Contact</a>
+      </nav>
+
+      <!-- Desktop Demo Button -->
+      <a href="index.html#contact" class="hidden md:block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold py-2 px-4 rounded-full shadow">
+        Book a Free Demo
+      </a>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 text-center mt-4 pb-4">
+      <a href="index.html#home" class="block hover:text-yellow-300">Home</a>
+      <a href="about.html" class="block hover:text-yellow-300">About</a>
+      <a href="index.html#subjects" class="block hover:text-yellow-300">Subjects</a>
+      <a href="index.html#testimonials" class="block hover:text-yellow-300">Testimonials</a>
+      <a href="index.html#contact" class="block hover:text-yellow-300">Contact</a>
+      <a href="index.html#contact" class="inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold py-2 px-4 rounded-full shadow">
+        Book a Free Demo
+      </a>
+    </div>
+
+    <div class="text-center mt-2 pb-2">
+      <h2 class="text-base sm:text-lg font-light">
+        Personalized Learning | Expert Tutoring for Grades 1–10
+      </h2>
+    </div>
+  </div>
+</header>
+<section id="contact" class="py-20 px-4 bg-white">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Left: Image -->
+    <div class="md:w-1/2">
+      <img src="img/contact.jpg" alt="Contact Manashvi Singh" class="rounded-2xl shadow-lg w-full object-cover">
+    </div>
+
+    <!-- Right: Form -->
+    <div class="md:w-1/2 text-left">
+      <h2 class="text-3xl font-bold mb-6 text-center md:text-left">Get in Touch</h2>
+      <p class="text-lg mb-8 text-center md:text-left">Feel free to reach out with any questions or to book your free demo class!</p>
+
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium mb-1">Full Name</label>
+          <input type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Message</label>
+          <textarea name="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-4 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p class="text-lg mb-6">Ready to boost your child's academic performance? Schedule your free demo class today!</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="tel:+919599357630" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-full shadow">
+          Call Now: +91 9599357630
+        </a>
+        <a href="mailto:manashvi.tutor@example.com" class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold py-3 px-6 rounded-full shadow">
+          Email Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>&copy; 2025 Manashvi Singh | Home Tutor | All Rights Reserved</p>
+  </footer>
+
+  <!-- Scroll Effect Script -->
+  <script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    const name = document.querySelector("input[name='name']").value;
+    const email = document.querySelector("input[name='email']").value;
+    const message = document.querySelector("textarea[name='message']").value;
+
+    // Customize your phone number (include country code, no '+' or dashes)
+    const phoneNumber = "919599357630"; // Replace with your WhatsApp number
+
+    // Build WhatsApp message
+    const whatsappMessage = `Hello! My name is ${name}.%0AEmail: ${email}%0AMessage: ${message}`;
+
+    // Create WhatsApp URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+  });
+</script>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+</body>
+</html>

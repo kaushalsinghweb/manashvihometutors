@@ -1,0 +1,27 @@
+header {
+      transition: all 0.4s ease-in-out;
+    }
+    .scrolled {
+      background-color: rgba(236, 72, 153, 0.8); /* pink with transparency */
+      backdrop-filter: blur(12px);
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 50px;
+      max-width: 1600px;
+      margin-top: 20px;
+
+
+    }
+
+ @media screen and (max-width: 800px) {
+  .scrolled {
+    background-color: rgba(236, 72, 153, 0.8);
+    backdrop-filter: blur(12px);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0px;
+    border-radius: 0px;
+    max-width: 1600px;
+    
+  }
+}
